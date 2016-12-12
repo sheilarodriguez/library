@@ -36,6 +36,7 @@ def open_library(filename):
 def add_book(filename, isbn, title, author):
     # Here's a start
     students, books = open_library(filename)
+    book[‘isbn’] = {‘title’ : title, ‘author’ : author }  
 
     # Now how can we add books to the data?
     # In the space below, write code that adds the key isbn
@@ -52,6 +53,8 @@ def remove_book(filename, isbn):
 
     # How can we *remove* an item from a dictionary?
     # Write code to delete the book keyed by isbn in the space below
+def check_out(filename, isbn, s_id):
+    students, books = open_library(filename)
 
     # Now write code that saves the new version of the data to your library
     pass
@@ -82,6 +85,8 @@ def status(filename):
     students, books = open_library(filename)
     # Print out two lists - one of all books currently checked out,
     # and one of all available books.
+    print ('checked.out books')
+    print ('!= checked.out books')
 
     pass
 
